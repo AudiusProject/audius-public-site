@@ -1,22 +1,691 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Title -->
-    <title>Audius: Coming Soon</title>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Audius</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!--Icons-->
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/cuh6syg.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#a116b7">
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
+        <!--Facebook-->
 
-  <body>
-    <h1 class="tk-proxima-nova">Coming Soon</h1>
-  </body>
+        <meta property="og:url" content="https://audius.co">
+        <meta property="og:type" content="product">
+        <meta property="og:title" content="Audius">
+        <meta property="og:description" content="Decentralized Audio Distribution, Attribution & Monetization">
+        <meta property="og:image" content="https://audius.co/img/og-image.png">
+
+        <!--Fonts-->
+
+        <link rel="stylesheet" href="https://use.typekit.net/cuh6syg.css">
+
+        <!--Libraries-->        
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+
+        <!--Main Stylesheet-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalize_cont.css">
+        <link rel="stylesheet" href="css/style_starting.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Tags -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120325397-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-120325397-1');
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TBWVXQ3');</script>
+        <!-- End Google Tag Manager -->
+
+
+    </head>
+    <body class="">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBWVXQ3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!--
+        >>================================================================================>
+        Landing Page
+        >>================================================================================>
+        -->
+
+        <section id="landing-page">
+            <div class="above-fold-container">
+                <div class="content-container">
+                    <h1 class="logo">
+                        <img src="img/audius.png" data-rjs="2" alt="Audius">
+                        <span>Audius</span>
+                    </h1>
+                    <div class="copy">
+                        <h2>Empowering Creators</h2>
+                        <p>Decentralized Audio Distribution, Attribution &amp; Monetization</p>
+
+
+
+
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/283890922?badge=0&autoplay=1" data-target="#videoModal">
+                            <img src="img/icon-play.svg">
+                        </button>
+                        <!-- Video Modal -->
+                        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>        
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay; fullscreen"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                        <!-- End Video Modal -->
+
+
+
+
+
+
+
+                    </div>
+                    <a class="purple-button" href="#" id="whitepaper-header-btn" data-toggle="modal" data-target="#emailModal">White Paper</a>
+                </div>
+                
+                <div class="animation">
+                    <div id="landing-page-animation">
+                        <span id="wave-bg" class="movement-container"></span>
+                        <span id="bars-bg" class="movement-container">
+                            <span class="bars"></span>
+                        </span>
+                        <span id="scrubber"></span>
+                        <div id="wave-1" class="movement-container">
+                            <div class="line-container">
+                                <svg class="line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="2033px" height="289.3px" viewBox="0 0 2033 289.3" style="enable-background:new 0 0 2033 289.3;" xml:space="preserve">
+                                    <path class="motion-path" d="M0,0.6c169.4,0,169.4,270.1,338.8,270.1c169.4,0,169.4-255.6,338.8-255.6c169.4,0,169.4,231,338.8,231 c169.4,0,169.4-168.5,338.8-168.5c169.4,0,169.4,211,338.8,211c169.4,0,169.4-288.1,338.9-288.1"/>
+                                </svg>
+                                <span class="dot one"><span></span></span>
+                                <span class="dot two"><span></span></span>
+                                <span class="dot three"><span></span></span>
+                            </div>
+                        </div>
+                        <div id="wave-2" class="movement-container">
+                            <div class="line-container">
+                                <svg class="line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="2211.1px" height="161.6px" viewBox="0 0 2211.1 161.6" style="enable-background:new 0 0 2211.1 161.6;" xml:space="preserve">
+                                    <path class="motion-path" d="M0,161.6c175.4,0,239.5-101.9,387.7-101.9c145.7,0,170,101.9,333.3,101.9C876.1,161.6,930.1,0,1105.5,0 s216.8,161.6,376.5,161.6c163.3,0,195.7-101.9,341.4-101.9c148.2,0,212.3,101.9,387.7,101.9"/>
+                                </svg>
+
+                                <span class="dot one"><span></span></span>
+                                <span class="dot two"><span></span></span>
+                                <span class="dot three"><span></span></span>
+                                <span class="dot four"><span></span></span>
+                            </div>
+                        </div>
+                        <div id="wave-3" class="movement-container">
+                            <div class="line-container">
+                                <svg class="line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="2410px" height="66.2px" viewBox="0 0 2410 66.2" style="enable-background:new 0 0 2410 66.2;" xml:space="preserve">
+                                    <path d="M2410,58.1c-30.9,0-36.2-4.6-51.2-4.6c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-15.2-66.5-15.2 c-25,0-31.3,15.2-59.3,15.2c-27.4,0-33.8-37.4-63.9-37.4c-30.1,0-36.5,37.4-63.9,37.4c-28,0-34.3-15.2-59.3-15.2 c-25.4,0-36.4,15.2-66.5,15.2c-30.1,0-39.5-24.1-60.1-24.1c-14.9,0-20.3,16.7-51.2,16.7l-1,0c-30.9,0-36.2-4.6-51.2-4.6 c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-32.5-66.5-32.5c-25,0-31.3,32.5-59.3,32.5c-27.4,0-33.8-65-63.9-65 c-30.1,0-36.5,65-63.9,65c-28,0-34.3-32.5-59.3-32.5c-25.4,0-36.4,32.5-66.5,32.5c-30.1,0-39.5-12.1-60.1-12.1 c-14.9,0-20.3,4.6-51.2,4.6l-1,0c-30.9,0-36.2-4.6-51.2-4.6c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-15.2-66.5-15.2 c-25,0-31.3,15.2-59.3,15.2c-27.4,0-33.8-37.4-63.9-37.4c-30.1,0-36.5,37.4-63.9,37.4c-28,0-34.3-15.2-59.3-15.2 c-25.4,0-36.4,15.2-66.5,15.2c-30.1,0-39.5-24.1-60.1-24.1c-14.9,0-20.3,16.7-51.2,16.7l-1,0c-30.9,0-36.2-4.6-51.2-4.6 c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-32.5-66.5-32.5c-25,0-31.3,32.5-59.3,32.5c-27.4,0-33.8-65-63.9-65 c-30.1,0-36.5,65-63.9,65c-28,0-34.3-32.5-59.3-32.5c-25.4,0-36.4,32.5-66.5,32.5c-30.1,0-39.5-12.1-60.1-12.1 c-14.9,0-20.3,4.6-51.2,4.6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="wave-4" class="movement-container">
+                            <div class="line-container">
+                                <svg class="line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="2410px" height="66.2px" viewBox="0 0 2410 66.2" style="enable-background:new 0 0 2410 66.2;" xml:space="preserve">
+                                    <path d="M2410,58.1c-30.9,0-36.2-4.6-51.2-4.6c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-15.2-66.5-15.2 c-25,0-31.3,15.2-59.3,15.2c-27.4,0-33.8-37.4-63.9-37.4c-30.1,0-36.5,37.4-63.9,37.4c-28,0-34.3-15.2-59.3-15.2 c-25.4,0-36.4,15.2-66.5,15.2c-30.1,0-39.5-24.1-60.1-24.1c-14.9,0-20.3,16.7-51.2,16.7l-1,0c-30.9,0-36.2-4.6-51.2-4.6 c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-32.5-66.5-32.5c-25,0-31.3,32.5-59.3,32.5c-27.4,0-33.8-65-63.9-65 c-30.1,0-36.5,65-63.9,65c-28,0-34.3-32.5-59.3-32.5c-25.4,0-36.4,32.5-66.5,32.5c-30.1,0-39.5-12.1-60.1-12.1 c-14.9,0-20.3,4.6-51.2,4.6l-1,0c-30.9,0-36.2-4.6-51.2-4.6c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-15.2-66.5-15.2 c-25,0-31.3,15.2-59.3,15.2c-27.4,0-33.8-37.4-63.9-37.4c-30.1,0-36.5,37.4-63.9,37.4c-28,0-34.3-15.2-59.3-15.2 c-25.4,0-36.4,15.2-66.5,15.2c-30.1,0-39.5-24.1-60.1-24.1c-14.9,0-20.3,16.7-51.2,16.7l-1,0c-30.9,0-36.2-4.6-51.2-4.6 c-20.6,0-30,12.1-60.1,12.1c-30.1,0-41.1-32.5-66.5-32.5c-25,0-31.3,32.5-59.3,32.5c-27.4,0-33.8-65-63.9-65 c-30.1,0-36.5,65-63.9,65c-28,0-34.3-32.5-59.3-32.5c-25.4,0-36.4,32.5-66.5,32.5c-30.1,0-39.5-12.1-60.1-12.1 c-14.9,0-20.3,4.6-51.2,4.6"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partners">
+                    <h3>Our Trusted Partners</h3>
+                    <div class="logos">
+                        <ul>
+                            <li class="general">
+                                <img src="img/general-catalyst.svg" alt="General Catalyst">
+                                <span>General Catalyst</span>
+                            </li>
+                            <li class="kpcb">
+                                <img src="img/kleiner-perkins-caufield-byers.svg" alt="Kleiner Perkins Caufield Byers">
+                                <span>Kleiner Perkins Caufield Byers</span>
+                            </li>
+                            <li class="lightspeed">
+                                <img src="img/lightspeed.svg" alt="Lightspeed">
+                                <span>Lightspeed</span>
+                            </li>
+                            <li class="pantera">
+                                <img src="img/pantera.png" alt="Pantera">
+                                <span>Pantera</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-overview container-fluid" id="overview">
+            <div>
+                <img src="img/section-overview-header.png" data-rjs="2" class="section-overview-header center">
+                <h2 class="main-tagline text-center center">Audius reclaims value for audio creators & consumers</h2>
+            </div>
+
+            <div class="row justify-content-start">
+                <div class="col-md-6">
+                    <img src="img/overview-1.png" data-rjs="2" class="center overview-item-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="overview-item-wrapper-right">
+                        <div class="overview-item-block-header">
+                            <img src="img/overview-icon-1.png" data-rjs="2" class="icon">
+                            <h4>Distribution</h4>
+                            <h5>Own Your Content</h5>
+                        </div>
+                        <img src="img/squiggle-orange.png" class="squiggle">
+                        <div class="overview-item-block-text">
+                            <p>Using Audius, creators can generate immutable and timestamped records for your creative works and register your assets to the Audius network. Because the network is decentralized and secured by blockchain technology, the metadata attribution remains safe, verifiable and immutable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-start">
+                <div class="col-md-6">
+                    <div class="overview-item-wrapper-left">
+                        <div class="overview-item-block-header num-2">
+                            <img src="img/overview-icon-2.png" data-rjs="2" class="icon">
+                            <h4>Attribution</h4>
+                            <h5>An Open Network</h5>
+                        </div>
+                        <img src="img/squiggle-purple.png" class="squiggle">
+                        <div class="overview-item-block-text">
+                            <p>Providing a transparent network in a space traditionally controlled by third parties, Audius builds a bridge between creators and consumers. Discover new content or verify authenticity, authorized through a truly transparent system of attribution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/overview-2.png" data-rjs="2" class="center overview-item-image">
+                </div>
+            </div>
+
+            <div class="row justify-content-start">
+                <div class="col-md-6">
+                    <img src="img/overview-3.png" data-rjs="2" class="center overview-item-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="overview-item-wrapper-right">
+                        <div class="overview-item-block-header num-3">
+                            <img src="img/overview-icon-3.png" data-rjs="2" class="icon">
+                            <h4>Monetization</h4>
+                            <h5>Create and Issue Licenses</h5>
+                        </div>
+                        <img src="img/squiggle-blue.png" class="squiggle">
+                        <div class="overview-item-block-text">
+                            <p>Audius uses blockchain technology to ensure that artists get paid safely & instantly as consumers listen to content.  Choose from preexisting license terms or create your own and automate the payments, transfers and issuance of licenses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="section-features container-fluid" id="features">
+            <div class="mb-120 ml-55">
+                <!-- <img src="img/section-overview-header.png" data-rjs="2" class="section-overview-header center"> -->
+                <img src="img/waveform.png" class="waveform left" />
+                <h2 class="main-tagline text-left">Audius Features</h2>
+                <img src="img/waveform.png" class="waveform right" />
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="feature-tile center">
+                        <div class="header">
+                            <h3>Creators</h3>
+                            <img src="img/hand-1.png" data-rjs="2" class="hand">
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-1.png" data-rjs="2" class="icon" style="width:32px;top:13px;left:3px;">
+                            </div>
+                            <h4>Audio File Hosting & Streaming</h4>
+                            <p>Painless audio publication.</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-2.png" data-rjs="2" class="icon">
+                            </div>
+                            <h4>Creator Dashboard</h4>
+                            <p>Sign into your account to view important info like listens, popular geo regions, etc.</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-3.png" data-rjs="2" class="icon" style="width:19px;">
+                            </div>
+                            <h4>Instant Payment</h4>
+                            <p>Get paid royalties on your content in real-time as users listen.</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-4.png" data-rjs="2" class="icon" style="top:15px;width:34px;">
+                            </div>
+                            <h4>Attribution Friendly</h4>
+                            <p>The Audius community can recognize new content that samples from your uploads, and grants you a cut of those royalties too.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-tile center">
+                        <div class="header">
+                            <h3>Listeners</h3>
+                            <img src="img/hand-2.png" data-rjs="2" class="hand hand-2">
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-5.png" data-rjs="2" class="icon" style="top:19px;width:35px;left:1px;">
+                            </div>
+                            <h4>Seamless</h4>
+                            <p>Listen immediately to popular content without needing to download additional software.</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-6.png" data-rjs="2" class="icon" style="top:15px;width:35px;">
+                            </div>
+                            <h4>Support The Community</h4>
+                            <p>Feel good knowing that all proceeds are going directly to help support your favorite creators.</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-wrapper">
+                                <img src="img/feature-icon-7.png" data-rjs="2" class="icon" style="top:13px;width:36px;">
+                            </div>
+                            <h4>Exclusive Content</h4>
+                            <p>Audius already has many content creators who have agreed to publish their content exclusively to the Audius platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section-team container-fluid employees" id="team">
+            <div class="header">
+                <div class="section-team-background center"></div>
+                <h2 class="main-tagline text-center center text-uppercase">Team</h2>
+            </div>
+
+            <div class="row justify-content-center row-1">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/ranidulankage">
+                        <div class="border-highlight"></div>
+                        <div class="headshot ranidu"></div>
+                        <h4 class="name">Ranidu Lankage</h4>
+                        <h5 class="title">Co-Founder & CEO</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Ranidu is a platinum-selling Sri Lankan Pop artist and DJ, signed to Sony. He attended Yale University and co-founded his previous startup Whale/Polly with Justin Kan, co-founder of Twitch. Backed by YC, both apps were used by millions of users. Ranidu previously held various roles at Lehman Brothers &amp; Google.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/roneilr">
+                        <div class="border-highlight"></div>
+                        <div class="headshot roneil"></div>
+                        <h4 class="name">Roneil Rumburg</h4>
+                        <h5 class="title">Co-Founder & CTO</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Roneil most recently co-founded Kleiner Perkins' early-stage seed fund. At KP, he was responsible for seed investments into Blockchain and AI companies, including Lightning Labs. Roneil attended Stanford University and previously co-founded a Bitcoin peer to peer payment company called Backslash.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/forrestbrowning">
+                        <div class="border-highlight"></div>
+                        <div class="headshot forrest"></div>
+                        <h4 class="name">Forrest Browning</h4>
+                        <h5 class="title">Co-Founder & Head of Product</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Forrest is a Forbes 30 Under 30 recipient, and most recently was a Co-Founder of StacksWare, an enterprise datacenter management platform started from a Stanford University research project. The company provides analytics at scale for Fortune 500 customers, and was successfully acquired in late 2017.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center row-2">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/sidsethi1">
+                        <div class="border-highlight"></div>
+                        <div class="headshot sid"></div>
+                        <h4 class="name">Sid Sethi</h4>
+                        <h5 class="title">Founding Engineer</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously at numberFire (acquired by FanDuel). Studied computer engineering at Carnegie Mellon.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/julianbaker">
+                        <div class="border-highlight"></div>
+                        <div class="headshot julian"></div>
+                        <h4 class="name">Julian Baker</h4>
+                        <h5 class="title">Design</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously owner of Yellow Pencil Design and lead graphic designer at Rival Sign Company &amp; GI-Graphics.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/hareesh-nagaraj">
+                        <div class="border-highlight"></div>
+                        <div class="headshot hareesh"></div>
+                        <h4 class="name">Hareesh Nagaraj</h4>
+                        <h5 class="title">Engineer</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously at Microsoft, on the Azure Service Fabric team working on reliable services. Studied computer science at William &amp; Mary.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center row-3">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/chirath-neranjena-8299241">
+                        <div class="border-highlight"></div>
+                        <div class="headshot chirath"></div>
+                        <h4 class="name">Chirath Neranjena</h4>
+                        <h5 class="title">Head of Research</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously at Google X: The Moonshot Factory. Studied aeronautics at Caltech.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/christina-rowland-19085a58">
+                        <div class="border-highlight"></div>
+                        <div class="headshot christina"></div>
+                        <h4 class="name">Christina Rowland</h4>
+                        <h5 class="title">Head of Operations</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously head of operations at Kleiner Perkins Caufield & Byers (KPCB). Studied at UC Santa Cruz.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/dheeraj-manjunath-52268114">
+                        <div class="border-highlight"></div>
+                        <div class="headshot dheeraj"></div>
+                        <h4 class="name">Dheeraj Manjunath</h4>
+                        <h5 class="title">Senior Engineer</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Previously Co-Founder & Director of Engineering at Triblio. Studied computer engineering at VCU.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center row-4">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="http://theravn.com">
+                        <div class="border-highlight"></div>
+                        <div class="headshot ray"></div>
+                        <h4 class="name">Ray Lee</h4>
+                        <h5 class="title">Business Development</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">The ultimate fixer.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center" data-linkedin-url="https://www.linkedin.com/in/shannonwu">
+                        <div class="border-highlight"></div>
+                        <div class="headshot shannon"></div>
+                        <h4 class="name">Shannon Wu</h4>
+                        <h5 class="title">Marketing</h5>
+                        <div class="icon-wrapper">
+                            <img src="img/icon-linkedin.png" class="icon">
+                        </div>
+                    </div>
+                    <p class="bios center">Owner of Mr. Progress marketing and advertising firm. Studied management science &amp; engineering at Stanford University.
+                    </p>
+                </div>
+                <div class="col-lg-4 center">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-team container-fluid advisors" id="advisors">
+            <div class="header">
+                <div class="section-team-background center"></div>
+                <h2 class="main-tagline text-center center text-uppercase">Advisors</h2>
+            </div>
+
+            <div class="row justify-content-center row-1">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot blau"></div>
+                        <h4 class="name">3LAU</h4>
+                        <h5 class="title">EDM Artist</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot jeremy"></div>
+                        <h4 class="name">Jeremy Gardner</h4>
+                        <h5 class="title">Co-Founder of Augur</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot bing"></div>
+                        <h4 class="name">Bing Gordon</h4>
+                        <h5 class="title">Co-Founder of EA Games</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center row-2">
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot paul"></div>
+                        <h4 class="name">Paul Veradittakit</h4>
+                        <h5 class="title">Partner at Pantera Capital</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot tom"></div>
+                        <h4 class="name">Tom Schmidt</h4>
+                        <h5 class="title">Product at 0x</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 center">
+                    <div class="person-tile center">
+                        <div class="border-highlight"></div>
+                        <div class="headshot greg"></div>
+                        <h4 class="name">Greg Hazel</h4>
+                        <h5 class="title">Chief Architect at BitTorrent</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="hr-wrapper">
+            <hr>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row center">
+                    <div class="col-lg-7">
+
+                        <h1 class="logo">
+                            <img src="img/audius.png" data-rjs="2" alt="Audius">
+                        </h1>
+                        <h4 class="logo-slogan">Empowering<br/>Creators</h4>
+
+                        <div class="copyright">© 2018 Audius, Inc. All Rights Reserved.</div>
+                        <div class="made-in-sf">Made With <span class="heart">♥</span> In San Francisco, California</div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="row link"><a href="#overview">Overview</a></div>
+                        <div class="row link"><a href="#features">Features</a></div>
+                        <div class="row link"><a href="#team">Team</a></div>
+                        <div class="row link"><a href="#advisors">Advisors</a></div>
+                        <div class="row link"><a href="#" data-toggle="modal" data-target="#emailModal">White Paper</a></div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row link connect-label">Connect</div>
+                        <div class="row link">
+                            <div class="icon-wrapper">
+                                <a href="https://medium.com/audius"><img src="img/icon-medium.svg" class="icon medium"></a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="https://twitter.com/AudiusProject"><img src="img/icon-twitter.svg" class="icon"></a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="https://t.me/Audius"><img src="img/icon-telegram.svg" class="icon medium telegram"></a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="https://www.linkedin.com/company/audius-project"><img src="img/icon-linkedin.png" class="icon linkedin"></a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="https://github.com/AudiusTeam"><img src="img/icon-github.svg" class="icon github"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Email Signup Modal -->
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+                    <div class="modal-highlight"></div>
+                    <h1>White Paper Coming Soon</h1>
+                    <img src="img/squiggle-purple.png" class="squiggle center">
+
+
+                    <div id="mc_embed_signup" class="center">
+                    <form action="https://Audius.us18.list-manage.com/subscribe/post?u=f351897a27ff0a641b8acd9ab&amp;id=f064864764" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        <h2>Signup To Be Notified When The Whitepaper Is Released</h2>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f351897a27ff0a641b8acd9ab_f064864764" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                    </div>
+
+
+
+
+
+
+
+
+                  <!-- <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay; fullscreen"></iframe> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- End Email Signup Modal -->
+
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="vendor/jquery-3.3.1.min.js"><\/script>')</script>
+        <script src="vendor/tether.min.js"></script>
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="js/modernizr-custom.min.js"></script>
+        <script src="js/MorphSVGPlugin.min.js"></script>
+        <script src="js/retina.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    </body>
 </html>
