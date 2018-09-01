@@ -598,6 +598,26 @@ margin: 0 0% !important;
 }
 
 
+.headshot.ash {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/ash.jpg);
+}
+.headshot.robb {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/robb.jpg);
+}
+.headshot.michael {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/michael.jpg);
+}
+
+.headshot.justin {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/justin.jpg);
+}
+.headshot.josh {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/josh.jpg);
+}
+.headshot.shamal {
+    background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/shamal.jpg);
+}
+
 .headshot.jeremy {
     background-image: linear-gradient(180deg,rgba(91,35,225,.0), rgba(237,65,195,.0),rgba(237,65,195,.0),rgba(162,47,235,.1),rgba(162,47,235,.5)),  url(../img/advisors/jeremy.jpg);
 }
