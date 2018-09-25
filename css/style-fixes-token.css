@@ -1,0 +1,10 @@
+@media screen and (min-width: 1020px) {
+#non-fungible ul li:not(:last-child):after {
+    content: '+';
+    position: absolute;
+    color: #6d00e8;
+    font-size: 30px;
+    right: -78px;
+    top: 48px;
+}
+}
