@@ -1,0 +1,60 @@
+@media screen and (min-width: 1020px){
+    #intro .play {
+        width: 132px;
+        height: 132px;
+
+        transition: all ease-in-out .15s, opacity ease-in-out 0.5s;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    #intro .play svg {
+        margin-left: 5px;
+        width: 47px;
+        height: 55px;
+    }
+}
+
+
+@media screen and (min-width: 1020px) {
+    #intro .play svg {
+        transition: all ease-in-out .15s, opacity ease-in-out 0.5s;
+    }
+    #intro .play:hover {
+        background-color: #a22feb !important;
+        box-shadow: 0 15px 45px rgba(50,50,93,.4), 0 6px 25px rgba(0,0,0,.37);
+        transform: scale(1.15) translateY(-5px) translateX(-43%);;
+    }
+}
+
+
+#intro .signup {
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    word-spacing: 1px;
+}
+
+
+@media screen and (max-width: 1019px) {
+    #intro .signup {
+        position: relative;
+        z-index: 2;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    #intro .signup {
+/*        position: absolute;
+        top: 220px;
+        z-index: 2;*/
+/*        display: table;
+        margin: 0 auto;*/
+    }
+}
