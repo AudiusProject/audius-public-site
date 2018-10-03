@@ -36,6 +36,7 @@
         <!--Main Stylesheet-->
 
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <!-- <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"> -->
 
         <link rel="stylesheet" href="css/style.min.css">
         <link rel="stylesheet" href="css/style-index-changes.css">
@@ -54,11 +55,11 @@
         </script>
 
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!--         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TBWVXQ3');</script>
+        })(window,document,'script','dataLayer','GTM-TBWVXQ3');</script> -->
         <!-- End Google Tag Manager -->
 
     </head>
@@ -97,7 +98,9 @@
             <nav class="menu">
                 <div>
                     <ul>
-                        <li><a class="standard-button purple" href="#" id="whitepaper-header-btn" data-toggle="modal" data-target="#emailModal">Join Waitlist</a></li>
+                        <li>
+                            <a class="standard-button purple" href="#" id="whitepaper-header-btn" data-toggle="modal" data-modal="emailModal" data-target="#emailModal">Join Waitlist</a>
+                        </li>
                     </ul>
                 </div>
                 <span class="bg-shapes">
@@ -132,7 +135,7 @@
                 <div class="header">
                     <h2>Empowering Artists</h2>
                     <p>Direct-To-Fan Audio Distribution, Attribution &amp; Monetization</p>
-                    <a class="signup standard-button purple" href="#">Join Waitlist</a>
+                    <a class="signup standard-button purple" href="#" data-toggle="modal" data-modal="emailModal" data-target="#emailModal">Join Waitlist</a>
                 </div>
                 <button class="play" data-modal="video-modal">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16.1" height="20.1" viewBox="0 0 16.1 20.1">
@@ -564,10 +567,20 @@
                             <h3>Empowering Artists Like Never Before</h3>
                             <p>Join the waitlist & get notified when we launch!</p>
                         </div>
-                        <form action="https://Audius.us18.list-manage.com/subscribe/post?u=f351897a27ff0a641b8acd9ab&amp;id=f064864764" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <form action="http://Audius.us18.list-manage.com/subscribe/post-json?u=f351897a27ff0a641b8acd9ab&amp;id=17a676b909&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
                             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f351897a27ff0a641b8acd9ab_17a676b909" tabindex="-1" value=""></div>
                             <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="standard-button purple">
                         </form>
+
+                        <div class="footer-signup">
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <span class="shapes" data-parallax="2" data-parallax-x="-50%">
@@ -685,9 +698,78 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Email Signup Modal -->
+        <div id="emailModal" class="modal">
+            <button class="close-modal mobile-only">
+                <svg aria-hidden="true" height="13.6" viewBox="0 0 13.6 13.6" width="13.6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.6 2l-2-2-4.8 4.8-4.8-4.8-2 2 4.8 4.8-4.8 4.8 2 2 4.8-4.8 4.8 4.8 2-2-4.8-4.8z"/>
+                </svg>
+                <span>Close Modal</span>
+            </button>
+            <div class="modal-container">
+                <div class="modal-frame">
+                    <button class="close-modal desktop-only">
+                        <svg aria-hidden="true" height="13.6" viewBox="0 0 13.6 13.6" width="13.6" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6 2l-2-2-4.8 4.8-4.8-4.8-2 2 4.8 4.8-4.8 4.8 2 2 4.8-4.8 4.8 4.8 2-2-4.8-4.8z"/>
+                        </svg>
+                        <span>Close Modal</span>
+                    </button>
+                    <div class="modal-content">
+                        
+
+
+                        <div class="modal-highlight"></div>
+                        <h1>Join The Artist Waitlist</h1>
+                        <img src="img/artist-squiggle-purple.png" class="squiggle center">
+
+
+                        <div id="mc_embed_signup" class="center">
+                        <form action="http://Audius.us18.list-manage.com/subscribe/post-json?u=f351897a27ff0a641b8acd9ab&amp;id=17a676b909&c=?" method="get" id="mc-embedded-subscribe-form-modal" name="mc-embedded-subscribe-form" class="validate">
+                            <div id="mc_embed_signup_scroll">
+                            <h2>Signup To Be Notified When The Platform Is Live!</h2>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f351897a27ff0a641b8acd9ab_17a676b909" tabindex="-1" value=""></div>
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Email Signup Modal -->
+
+
+
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-        <script src="js/scripts.min.js"></script>
+        <script src="js/vendor/tether.min.js"></script>
+        <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="js/artist-page/modernizr-custom.min.js"></script>
+        <script src="js/artist-page/MorphSVGPlugin.min.js"></script>
+        <script src="js/artist-page/retina.js"></script>
+        <script src="js/artist-page/TweenMax.min.js"></script>
+        <script src="js/artist-page/player.js"></script>
+        <script src="js/artist-page/main.js"></script>
+        <script src="js/artist-page/custom.js"></script>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </body>
 </html>
