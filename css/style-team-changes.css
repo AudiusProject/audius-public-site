@@ -1,0 +1,9 @@
+.leadership {
+
+}
+
+@media screen and (min-width: 1020px) {
+  .row.two-columns.leadership {
+    justify-content: center !important;
+  }
+}
