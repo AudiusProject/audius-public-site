@@ -1,3 +1,14 @@
 #intro .header h2 {
     color: #170d52; 
 }
+
+#video-modal {
+    height: 0;
+    width: 0;
+    transition: opacity 300ms ease;
+}
+
+.active#video-modal {
+    height: 100%;
+    width: 100%;
+}
