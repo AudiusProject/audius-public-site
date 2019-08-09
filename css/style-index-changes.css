@@ -12,3 +12,20 @@
     height: 100%;
     width: 100%;
 }
+
+#features {
+    margin-top: 163px;
+}
+
+
+#features .feature-list .feature {
+    height: 208px;
+    padding: 0px;
+}
+
+
+@media screen and (max-width: 1019px) {
+    #features {
+        margin-top: 32px;
+    }
+}
